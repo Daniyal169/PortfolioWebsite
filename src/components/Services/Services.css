@@ -1,0 +1,240 @@
+.services {
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 6rem;
+    padding-top: 3rem;
+    margin-bottom: 14rem;
+}
+
+.ser-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 1.6rem; */
+}
+
+
+
+.ser-left> :nth-child(1) {
+    color: var(--darkBlue);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.ser-left> :nth-child(2) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--black);
+    margin-top: 10px;
+    width: 50%;
+}
+
+.ser-btn {
+    width: 6rem;
+    height: 2rem;
+    margin-top: 1.6rem;
+}
+
+.ser-right {
+    position: relative;
+}
+
+.ser-right>* {
+    position: absolute;
+}
+
+.ser-right>:nth-child(1) {
+    left: 14rem;
+}
+
+.ser-right>:nth-child(2) {
+    top: 5rem;
+    left: -2rem;
+}
+
+.ser-right>:nth-child(3) {
+    top: 16rem;
+    left: 12rem;
+}
+
+.ser-right>:nth-child(4) {
+    top: 20rem;
+    left: -4rem;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .services {
+        padding: 0 2rem;
+        margin-bottom: 8rem;
+
+    }
+}
+
+@media screen and (max-width: 1136px) {
+    .ser-right>:nth-child(1) {
+        left: 10rem;
+    }
+
+    .ser-right>:nth-child(2) {
+        top: 5rem;
+        left: -5rem;
+    }
+
+    .ser-right>:nth-child(3) {
+        top: 16rem;
+        left: 12rem;
+    }
+
+    .ser-right>:nth-child(4) {
+        top: 20rem;
+        left: -3rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .services {
+        padding: 0 2rem;
+        margin-bottom: 5rem;
+
+    }
+
+    .ser-right>:nth-child(1) {
+        left: 6rem;
+    }
+
+    .ser-right>:nth-child(2) {
+        top: 5rem;
+        left: -8rem;
+    }
+
+    .ser-right>:nth-child(3) {
+        top: 16rem;
+        left: 9rem;
+    }
+
+    .ser-right>:nth-child(4) {
+        top: 20rem;
+        left: -5rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .ser-right>:nth-child(1) {
+        left: 4rem;
+    }
+
+    .ser-right>:nth-child(2) {
+        top: 5rem;
+        left: -9rem;
+    }
+
+    .ser-right>:nth-child(3) {
+        top: 13rem;
+        left: 5rem;
+    }
+
+    .ser-right>:nth-child(4) {
+        top: 18rem;
+        left: -7rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .services {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 0rem;
+        margin-bottom: 15rem;
+    }
+
+    .ser-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns layout */
+        grid-row-gap: 12rem;
+        grid-column-gap: 2rem;
+        position: static;
+        /* Resetting position to static */
+        width: 100%;
+    }
+
+    .ser-right>* {
+        position: static;
+        /* Resetting position to static */
+        width: 100%;
+        /* Make sure each box takes full width of the grid cell */
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .services {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 0;
+        margin-bottom: 15rem;
+    }
+
+    .ser-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 12rem;
+        grid-column-gap: 3rem;
+        position: static;
+        /* Resetting position to static */
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+    .services {
+        margin-top: 3rem;
+        flex-direction: column;
+        gap: 3rem;
+        height: 55rem;
+        margin-bottom: 10rem;
+    }
+
+    .ser-right {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12rem;
+        position: static;
+        width: 100%;
+    }
+
+    .ser-right>* {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .services {
+        margin-top: 3rem;
+        margin-bottom: 12rem;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .services {
+        margin-top: 3rem;
+        margin-bottom: 13rem;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .services {
+        margin-top: 3rem;
+        margin-bottom: 14rem;
+    }
+}

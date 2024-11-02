@@ -1,0 +1,165 @@
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-name {
+    font-weight: bold;
+    font-size: 1.3rem !important;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.nav-links {
+    flex: 8;
+}
+
+.nav-links>ul {
+    display: flex;
+    margin-right: 3rem;
+    gap: 2rem;
+}
+
+.nav-links>ul>li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navlink {
+    font-size: 0.9rem !important;
+
+}
+
+.nav-links>ul>li:hover {
+    color: var(--darkBlue);
+}
+
+
+.navBtn {
+    background: linear-gradient(180deg, #00FFFF 26.71%, #000080 99.36%);
+    box-shadow: 1px 10px 15px rgba(0, 255, 255, 0.4);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navBtn:hover {
+    background: white;
+    cursor: pointer;
+    color: var(--darkBlue);
+}
+
+.Upwork {
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 999;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 935px) {
+    .nav-left {
+        gap: 1.5rem;
+    }
+
+    .nav-links>ul {
+        margin-right: 2rem;
+        gap: 1.5rem;
+    }
+
+    .navlink {
+        font-size: 0.8rem !important;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-name {
+        font-weight: bold;
+        font-size: 1.1rem !important;
+        cursor: pointer;
+    }
+
+    .navlink {
+        font-size: 0.8rem !important;
+    }
+
+    .nav-links>ul {
+        margin-right: 1rem;
+        gap: 1.5rem;
+    }
+
+    .navBtn {
+        border: none;
+        color: white;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-right {
+        flex: 3;
+    }
+
+    .nav-left {
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-right {
+        flex: 4;
+        margin-left: 10px;
+    }
+
+    .nav-left {
+        flex: 5;
+    }
+}

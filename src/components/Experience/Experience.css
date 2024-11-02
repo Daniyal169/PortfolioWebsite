@@ -1,0 +1,165 @@
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+    height: 40vh;
+    background: rgb(168, 204, 230);
+    background: linear-gradient(90deg, rgb(235, 243, 249) 0%, rgb(214, 232, 243) 35%, rgb(210, 230, 247) 71%, rgb(228, 241, 248) 100%);
+}
+
+.exp-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.exp-box span {
+    font-size: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .experience {
+        gap: 4rem;
+        height: 40vh;
+    }
+
+    .circle {
+        width: 4rem;
+        height: 4rem;
+        background: white;
+        border-radius: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .experience {
+        gap: 2rem;
+    }
+
+    .circle {
+        margin-bottom: 1rem;
+    }
+
+    .exp-box span {
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media screen and (max-width: 660px) {
+    .experience {
+        gap: 2rem;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .experience {
+        gap: 1rem;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .exp-box span {
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .experience {
+        gap: 1rem;
+        height: 25vh;
+        margin: 0px !important;
+    }
+
+    .circle {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .exp-box span {
+        font-size: 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .experience {
+        gap: 1rem;
+        height: 20vh;
+    }
+
+    .circle {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 0.4rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .exp-box span {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .experience {
+        gap: 0.5rem;
+        height: 20vh;
+    }
+
+    .circle {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.4rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .exp-box span {
+        font-size: 0.3rem;
+    }
+}

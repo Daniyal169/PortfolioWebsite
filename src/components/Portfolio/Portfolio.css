@@ -1,0 +1,215 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0rem 3rem;
+    margin-top: 5rem;
+}
+
+
+
+.portfolio :nth-child(1) {
+    color: var(--darkBlue);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.portfolioContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.portBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px sild red;
+
+}
+
+.imgbox {
+    border-radius: 10px;
+    height: 13rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portBox img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.portCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portCont>span {
+    color: var(--black) !important;
+    font-size: 1.5rem !important;
+    margin-top: 2rem;
+}
+
+
+.portCont button {
+    background: linear-gradient(180deg, #00FFFF 26.71%, #000080 99.36%);
+    box-shadow: 1px 10px 15px rgba(0, 255, 255, 0.4);
+    border-radius: 34px;
+    border: none;
+    color: white !important;
+    font-size: 1rem !important;
+    padding: 5px 20px !important;
+    margin-top: 10px;
+}
+
+.portCont button:hover {
+    background: white !important;
+    color: black !important;
+    cursor: pointer;
+    color: var(--darkBlue);
+}
+
+@media screen and (max-width: 1250px) {
+    .imgbox {
+        border-radius: 10px;
+        height: 13rem;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .portfolio {
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio {
+        height: 70vh;
+        padding: 0rem 1rem;
+    }
+
+    .imgbox {
+        border-radius: 10px;
+        height: 10rem;
+        width: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .portCont>span {
+        color: var(--black) !important;
+        font-size: 1.5rem !important;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio {
+        height: 70vh;
+        margin-top: 2rem;
+        padding: 0rem 0.5rem;
+    }
+
+
+    .imgbox {
+        border-radius: 10px;
+        height: 10rem;
+        width: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .portfolio {
+        height: 70vh;
+        margin-top: 2rem;
+        padding: 0rem 0.5rem;
+    }
+
+
+    .imgbox {
+        border-radius: 10px;
+        height: 10rem;
+        width: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+
+    .portfolio {
+        height: 70vh;
+        margin-top: 2rem;
+        padding: 0rem 0rem;
+    }
+
+    .imgbox {
+        border-radius: 10px;
+        height: 10rem;
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .portCont>span {
+        color: var(--black) !important;
+        font-size: 1.1rem !important;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .portfolio {
+        height: 65vh;
+        margin-top: 2rem;
+        padding: 0rem 0rem;
+    }
+
+    .imgbox {
+        border-radius: 10px;
+        height: 9rem;
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .portCont>span {
+        color: var(--black) !important;
+        font-size: 1rem !important;
+        margin-top: 0.5rem;
+    }
+}

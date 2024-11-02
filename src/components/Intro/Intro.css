@@ -1,0 +1,294 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 5rem;
+}
+
+.intro-left {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.intro-name> :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.intro-name> :nth-child(2) {
+    color: var(--darkBlue);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.intro-name> :nth-child(3) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.intro-name> :nth-child(3)>span {
+    color: var(--darkBlue);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+.i-btn {
+    width: 7rem;
+    height: 2rem;
+}
+
+.intro-icon {
+    /* margin-top: 1rem; */
+    display: flex;
+    gap: 1rem;
+}
+
+.intro-right {
+    flex: 1;
+    position: relative;
+}
+
+.intro-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.intro-right> :nth-child(1) {
+    height: 600px;
+    width: 500px;
+    /* left: 28%; */
+    top: -25%;
+}
+
+
+
+
+/* blur */
+.blur1 {
+    background: rgb(238 210 255);
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    top: -18%;
+    left: 56%;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    filter: blur(72px);
+}
+
+.blur2 {
+    background: #C1F5FF;
+    position: absolute;
+    top: 17rem;
+    width: 21rem;
+    height: 11rem;
+    left: -9rem;
+    border-radius: 50%;
+    background: #C1F5FF;
+    filter: blur(212px);
+    z-index: -9;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 1000px) {
+    .intro-name> :nth-child(1) {
+        color: var(--black);
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .intro-name> :nth-child(2) {
+        color: var(--darkBlue);
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .intro-name> :nth-child(3) {
+        color: var(--black);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .intro-name> :nth-child(3)>span {
+        color: var(--darkBlue);
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    .intro-right> :nth-child(1) {
+        height: 500px;
+        width: 400px;
+        top: -25%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 3rem;
+        height: auto;
+    }
+
+    .intro-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-right> :nth-child(1) {
+        height: 500px;
+        width: 400px;
+        position: relative;
+        margin: 0;
+    }
+
+    .intro-left {
+        align-items: center;
+        width: 30rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    .intro-name> :nth-child(1) {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .intro-name> :nth-child(2) {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .intro-name> :nth-child(3) {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .intro-name> :nth-child(3)>span {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .intro-right> :nth-child(1) {
+        height: 400px;
+        width: 350px;
+        position: relative;
+        margin: 0;
+    }
+
+    .intro-left {
+        align-items: center;
+        width: 40rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro-name> :nth-child(1) {
+        width: 100%;
+        font-size: 2.2rem;
+    }
+
+    .intro-name> :nth-child(2) {
+        width: 100%;
+        font-size: 2.2rem;
+    }
+
+    .intro-name> :nth-child(3) {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .intro-name> :nth-child(3)>span {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .intro-right> :nth-child(1) {
+        height: 350px;
+        width: 300px;
+        position: relative;
+        margin: 0;
+    }
+
+
+
+    .intro-name> :nth-child(1) {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .intro-name> :nth-child(2) {
+        width: 100%;
+        font-size: 2.1rem;
+    }
+
+    .intro-name> :nth-child(3) {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .intro-name> :nth-child(3)>span {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+
+    .intro-right> :nth-child(1) {
+        height: 300px;
+        width: 270px;
+        position: relative;
+        margin: 0;
+    }
+
+
+
+    .intro-name> :nth-child(1) {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .intro-name> :nth-child(2) {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .intro-name> :nth-child(3) {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .intro-name> :nth-child(3)>span {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}

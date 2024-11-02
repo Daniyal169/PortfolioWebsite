@@ -1,0 +1,43 @@
+:root {
+  --aqua: #00FFFF;
+  /* Aqua */
+  --darkBlue: #000080;
+  /* Navy Blue */
+
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --darkBlueCard: rgba(0, 255, 255, 0.4);
+  --main-circle: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+.btn {
+  background: linear-gradient(180deg, #00FFFF 26.71%, #000080 99.36%);
+  box-shadow: 1px 10px 15px rgba(0, 255, 255, 0.4);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--darkBlue);
+}
+
+/* @media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;§
+
+  }
+} */

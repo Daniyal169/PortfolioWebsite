@@ -1,0 +1,74 @@
+.card {
+    height: 12.5rem;
+    width: 10rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: 1px 10px 15px rgba(0, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 10px 26px 5px 26px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 4px rgba(0, 255, 255, 0.4);
+}
+
+.card span:nth-child(3) {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.card>img {
+    height: 100px;
+    width: 100px;
+}
+
+.c-button {
+    background: #FFFFFF;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290FD;
+}
+
+.c-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1020px) {
+    .card {
+        height: 10rem;
+        width: 8rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.26);
+        box-shadow: 1px 10px 15px rgba(0, 255, 255, 0.4);
+        border-radius: 20px;
+        padding: 10px 26px 5px 26px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .card span:nth-child(3) {
+        color: var(--gray);
+        font-size: 12px;
+    }
+
+    .card>img {
+        height: 70px;
+        width: 70px;
+    }
+}

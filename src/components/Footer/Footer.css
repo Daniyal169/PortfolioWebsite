@@ -1,0 +1,67 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    padding: 1rem;
+    background-color: black;
+}
+
+
+.f-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.f-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-icons a {
+    color: white;
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        margin: -0.5rem -3.5rem;
+        position: relative;
+        padding: 1rem 0rem;
+        background-color: black;
+    }
+
+    .f-icons span {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .f-icons {
+        gap: 1rem;
+    }
+
+    .f-icons span {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .f-icons {
+        gap: 1rem;
+    }
+
+    .f-icons span {
+        font-size: 0.5rem;
+    }
+}
